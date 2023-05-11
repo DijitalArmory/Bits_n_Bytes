@@ -1,0 +1,55 @@
+'### socket syscall ###
+######################
+
+# socket (int domain, int type, int protocol)
+
+# creates an endpoint for communication and and returns a file descriptor that referes to that endpoint
+
+----------------------------------------------------------------------------------------------------------------------------
+
+### bind syscall ###
+####################
+
+# bind (int sockfd, struct sockaddr *addr, socklen_t addrlen)
+
+# when socket(2) is created with socket, it exists in a namespace (address family) but has no address assigned to it. 
+# bind() assings the address specified by *addr to the socket reffered to by the file descriptor sockfd. 
+
+
+*** struct sockaddr ***
+struct sockaddr {
+  uint16_t sa_family; <-- type of socket (sin_family, etc.)
+  unint8_t sa_data[14];
+}
+
+
+******** struct sockaddr_in{
+  unint16_t sin_family;
+  unint16_t sin_port;
+  unint32_t sin_addr;
+  unint8_t __pad[8];
+}
+
+
+- just a blob of data 
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+### listen syscall ###
+#####################
+
+# listen (int sockfd, int backlog) 
+
+# listen marks the ocket reffered to by sockfd as a passive socket, that is, as a socket that will used to accept incoming request connections using accept(2)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+### accept syscall ###
+######################
+
+# accept (sockfd, struct sockaddr *addr, socklen *addrlen)
+
+# The accept system call is used with conncetion-based socket types (SOCK_STREAM, SOCK_SEQPACKET, etc). It extracts the first connection request on the queue on pending connections
+# for the listening socket, sockfd, creates a new connected socket and returns a new file descriptor reffering to that socket. 

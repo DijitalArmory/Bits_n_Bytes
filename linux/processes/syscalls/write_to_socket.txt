@@ -1,0 +1,21 @@
+*** Steps to accept TCP/IP Network Connection 
+
+# 1. socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+
+# 2. bind(3, {sa_family=AF_INET, sin_port=htons(80), sin_address=inet_addr("0.0.0.0")}, 16) = 0
+
+# 3. listen (3, 0) = 0
+
+# 4. accept(3, NULL, NULL) = 4
+more detailed info on steps 1..4 can be found in the 'accept_tcip_ip_connection.txt file'
+-------------------------------------------------------------------------------------------------
+
+you can write directly to the fd
+
+# 5. write(4, "HTTP/1.0 200 OK "r\n\r\n\", 19)
+- respond on fd 4 connection
+
+-------------------------------------------------------------------------------------------------
+
+# 6. close(fd)
+

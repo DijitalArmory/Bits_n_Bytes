@@ -1,0 +1,15 @@
+### Linux Processes From The Kernel's Perspective ###
+#####################################################
+
+# The kernel manages and keeps track of a process' state through the 'task_struct' struct
+The task_struct struct holds the data of...
+- PID
+- PPID 
+- FD0 
+- FD1
+- FD2
+- FD3
+- FD4
+..
+- FD1024
+- memmap of programs

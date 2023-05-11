@@ -1,0 +1,5 @@
+# PATH holds a bunch of directories that the terminal will search for your command name.
+# this is so you don't have to type in the whole path to a file to run a program
+# export PATH=<dir-with-your-program-file>:$PATH
+
+# https://www.digitalocean.com/community/tutorials/how-to-view-and-update-the-linux-path-environment-variable

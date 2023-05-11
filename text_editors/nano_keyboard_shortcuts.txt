@@ -1,0 +1,14 @@
+Ctrl + G: Displays the nano help menu.
+Ctrl + X: Closes the current file and exits nano.
+Ctrl + O: Writes the current file to disk.
+Ctrl + W: Searches for a string or regular expression in the current file.
+Ctrl + K: Cuts the current line or selected text to the clipboard.
+Ctrl + U: Pastes the contents of the clipboard at the cursor position.
+Ctrl + J: Justifies the current paragraph.
+Ctrl + Y: Scrolls one page up.
+Ctrl + V: Scrolls one page down.
+Alt + : Goes to a specific line number.
+Alt + A: Selects the entire file.
+Alt + 6: Copies the current line to the clipboard.
+Alt + 7: Cuts the current line to the clipboard.
+Alt + 8: Pastes the contents of the clipboard at the cursor position.

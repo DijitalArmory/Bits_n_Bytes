@@ -1,0 +1,8 @@
+# Kernel Memory #
+#################
+
+# A linux process is really just a blob of data sitting in kernel memory 
+
+# system calls are what manipulates the kernel memory 
+
+# kernel memory is stored in the mapped memory table at some location

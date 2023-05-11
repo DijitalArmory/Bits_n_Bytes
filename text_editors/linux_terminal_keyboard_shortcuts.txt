@@ -1,0 +1,10 @@
+Ctrl + C: Interrupts the current process.
+Ctrl + D: Sends an EOF (End of File) signal to the shell.
+Ctrl + Z: Suspends the current process and sends it to the background.
+Ctrl + A: Moves the cursor to the beginning of the line.
+Ctrl + E: Moves the cursor to the end of the line.
+Ctrl + L: Clears the terminal screen.
+Ctrl + R: Searches the command history for the previous command that matches the entered characters.
+Ctrl + U: Deletes the characters from the cursor to the beginning of the line.
+Ctrl + K: Deletes the characters from the cursor to the end of the line.
+Tab: Autocompletes the current command or file name.

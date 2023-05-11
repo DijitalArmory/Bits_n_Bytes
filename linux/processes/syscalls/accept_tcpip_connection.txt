@@ -1,0 +1,23 @@
+*** Steps to accept TCP/IP Network Connection 
+
+# 1. socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+- af_inet=internet socket
+- sock_stream=tcp/ip
+- use the IP protocol
+- the socket gets updated in the FD table as file descriptor 3
+
+# 2. bind(3, {sa_family=AF_INET, sin_port=htons(80), sin_address=inet_addr("0.0.0.0")}, 16) = 0
+- bind to socket, fd3
+- binding to internet socket type
+- connecting to port 80
+- addresses that can connect are the whole entire internet
+- padding of socket is 16
+
+# listen (3, 0) = 0
+- start acepting connection from object matching fd3 with  any ip address
+
+# accept(3, NULL, NULL) = 4
+- accept all connection requests matching the above 
+- as soon as the connection is accepted, an immediate result is returned on FD4 which is created 
+- and  represents a whole brand new socket with two ends communicating through the socket 
+- straight over the internet
