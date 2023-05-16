@@ -16,3 +16,21 @@ If you see a green arrow in a cell corner, this could mean an error.
 If you no this is not an error, you can click the green arrow, select the 'error' icon next to it, and choose 'Ignore Error'
 
 ---
+---
+---
+
+## Secret Menus
+---
+### Menu 1
+* __right-click on the bottom right corner of the cell__
+* __drag down one cell and back up again__
+* __releaser right mouse button__
+* _the menu should appear_
+---
+### Menu 2
+* click on the bottom right corner of the cell__
+* __drag down one cell and back up again__
+* __releaser right mouse button__
+* _choose appropriate option_
+[Example Video](https://www.youtube.com/watch?v=fODnNDNMXiI&list=WL&index=89&t=9913s)
+_timestamp=2:56_
